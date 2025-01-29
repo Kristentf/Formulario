@@ -1,3 +1,81 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    margin: 20px;
+    font-family: "Nunito Sans", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    background-color: #6affa3;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 20px;
+}
+.section2-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.section2-div input{
+    width: 30vh;
+    background-color: hsla(0, 0%, 100%, 0.863);
+    border-radius: 10px;
+    padding: 5px;
+}
+.section3-div1{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.section3-div2{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.section3-div2 select{
+    margin-bottom: 10px;
+    background-color: hsla(0, 0%, 100%, 0.863);
+    border-radius: 4px;
+    text-align: center;
+    width: 9vb;
+    
+}
+.section4-div{
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;    
+}
+.section5-div{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.section5-div textarea{
+    background-color: hsla(0, 0%, 100%, 0.863);
+    border-radius: 10px;
+    width: 40vb;
+    padding: 10px;
+    resize: none;
+}
+.confirmar{
+    padding: 10px;
+}
+.confirmar input{
+    background-color: hsl(273, 100%, 75%);
+    border-radius: 10px;
+    padding: 10px;
+}

@@ -7,77 +7,81 @@
     <link rel="stylesheet" href="/assets/formulario.css">
 </head>
 <body>
-    <section class="section1">
-        <div class="titulo">
-            <h1>Cadastro de DEVs</h1>
-            <p>complete suas informações</p>
-        </div>
-    </section>    
-        <form>
-            <section class="section2">    
-                <div>
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome">
-                    <label for="sobrenome">Sobrenome</label>
-                    <input type="text" name="sobrenome" id="sobrenome">
-                    <label for="">Email</label>
-                    <input type="email" name="email" id="email">
-                </div>
-            </section>
-            
-            <!-- Local para para digitar nome, sobrenome e Email -->
-            <section class="section3">
-                <div>
-                    <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
-                    <input type="radio" name="backend" id="back">
-                    <label for="back">Back-end</label>
-                    <input type="radio" name="frondend" id="front">
-                    <label for="front">Front-end</label>
-                    <input type="radio" name="fullstack" id="full">
-                    <label for="full">Fullstack</label>
-                </div>
+    <main>
+            <form>
+                <section class="section1">
+                    <div class="titulo">
+                        <h1>Cadastro de DEVs</h1>
+                        <p>complete suas informações</p>
+                     </div>
+                </section>   
+                <!-- Local para para digitar nome, sobrenome e Email -->
+                <section class="section2">    
+                    <div class="section2-div">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
+                        <label for="">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email">
+                    </div>
+                </section>
+                
+                <!-- Local para escolher o lado -->
+                <section class="section3">
+                    <div class="section3-div1">
+                        <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+                        <label for="back"><input type="radio" name="backend" id="back">Back-end</label>
+                        <label for="front"><input type="radio" name="frondend" id="front">Front-end</label>
+                        <label for="full"><input type="radio" name="fullstack" id="full">Fullstack</label>
+                    </div>
 
-                <!-- Local para escolher a  -->
-                <div>
-                    <label><strong>Senioridade</strong></label>
-                    <select size="1">
-                        <option value="1">Júnior</option>
-                        <option value="2">Pleno</option>
-                        <option value="3">Sênio</option>
-                    </select>
-                </div>
-            </section>
-            
-            <!-- Locala para selecionar as linguagem -->
-            <section class="section4">
-                <div>
-                    <label><strong>Selecione as tecnologias que utiliza:</strong></label>
-                    <label for="tec-html"><input type="checkbox" name="tec" id="tec-html">HTML</label>
-                    <label for="tec-css"><input type="checkbox" name="tec" id="tec-css">CSS</label>
-                    <label for="tec-js"><input type="checkbox" name="tec" id="tec-js">JavaScript</label>
-                    <label for="tec-php"><input type="checkbox" name="tec" id="tec-php">PHP</label>
-                    <label for="tec-c#"><input type="checkbox" name="tec" id="tec-c#">C#</label>
-                    <label for="tec-python"><input type="checkbox" name="tec" id="tec-python">Python</label>
-                    <label for="tec-java"><input type="checkbox" name="tec" id="tec-java">Java</label>
-                </div>
-            </section>
+                    <!-- Local para escolher a sua senioridade -->
+                    <div class="section3-div2">
+                        <label>
+                            <strong>Senioridade</strong>
+                            <select size="1">
+                                <option value="1">Júnior</option>
+                                <option value="2">Pleno</option>
+                                <option value="3">Sênio</option>
+                            </select>
+                        </label>    
+                    </div>
+                </section>
+                
+                <!-- Locala para selecionar as linguagem -->
+                <section class="section4">
+                    <div class="section4-div">
+                        <label><strong>Selecione as tecnologias que utiliza:</strong></label>
+                        <div>
+                            <label for="tec-html"><input type="checkbox" name="tec" id="tec-html"> HTML</label>
+                            <label for="tec-css"><input type="checkbox" name="tec" id="tec-css"> CSS</label>
+                            <label for="tec-js"><input type="checkbox" name="tec" id="tec-js"> JavaScript</label>
+                            <label for="tec-php"><input type="checkbox" name="tec" id="tec-php"> PHP</label>
+                            <label for="tec-c#"><input type="checkbox" name="tec" id="tec-c#"> C#</label>
+                            <label for="tec-python"><input type="checkbox" name="tec" id="tec-python"> Python</label>
+                            <label for="tec-java"><input type="checkbox" name="tec" id="tec-java"> Java</label>
+                        </div>
+                    </div>
+                </section>
 
-            <!-- Caixa para contar experiência -->
-            <section class="section5">
-                <div>
-                    <label><strong>Conte um pouco mais da sua experiência:</strong></label>
-                    <label for="experiencia"></label>
-                    <textarea name="experiencia" id="experiencia" cols="
-                    30" rows="10" placeholder="Suas experiências"></textarea>
-                </div>
-            </section>
+                <!-- Caixa para contar experiência -->
+                <section class="section5">
+                    <div class="section5-div">
+                        <label><strong>Conte um pouco mais da sua experiência:</strong></label>
+                        <label for="experiencia"></label>
+                        <textarea name="experiencia" id="experiencia" cols="
+                        30" rows="10" placeholder="Suas experiências"></textarea>
+                    </div>
+                </section>
 
-            <section class="section6">
-                <div>
-                    <input type="button" value="Concluido">
-                </div>
-            </section>
-        </form>
+                <section class="section6">
+                    <div class="confirmar">
+                        <input type="button" value="Concluido">
+                    </div>
+                </section>
+            </form>
+    </main>
 
 </body>
 </html>
