@@ -11,7 +11,7 @@
             <form>
                 <section class="section1">
                     <div class="titulo">
-                        <h1>Cadastro de DEVs</h1>
+                        <h1>Cadastro de DEV's</h1>
                         <p>complete suas informações</p>
                      </div>
                 </section>   
@@ -19,11 +19,11 @@
                 <section class="section2">    
                     <div class="section2-div">
                         <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
                         <label for="sobrenome">Sobrenome</label>
-                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required>
                         <label for="">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Digite seu email">
+                        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
                     </div>
                 </section>
                 
@@ -31,9 +31,9 @@
                 <section class="section3">
                     <div class="section3-div1">
                         <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
-                        <label for="back"><input type="radio" name="backend" id="back">Back-end</label>
-                        <label for="front"><input type="radio" name="frondend" id="front">Front-end</label>
-                        <label for="full"><input type="radio" name="fullstack" id="full">Fullstack</label>
+                        <label for="back"><input type="radio" name="aplicação" id="back" checked>Back-end</label>
+                        <label for="front"><input type="radio" name="aplicação" id="front">Front-end</label>
+                        <label for="full"><input type="radio" name="aplicação" id="full">Fullstack</label>
                     </div>
 
                     <!-- Local para escolher a sua senioridade -->
@@ -41,6 +41,7 @@
                         <label>
                             <strong>Senioridade</strong>
                             <select size="1">
+                                <option selected disabled value="">Selecione</option>
                                 <option value="1">Júnior</option>
                                 <option value="2">Pleno</option>
                                 <option value="3">Sênio</option>
@@ -77,7 +78,7 @@
 
                 <section class="section6">
                     <div class="confirmar">
-                        <input type="button" value="Concluido">
+                        <button id="buttom_submit" type="submit">Enviar</button>
                     </div>
                 </section>
             </form>
